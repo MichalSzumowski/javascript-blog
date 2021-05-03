@@ -9,6 +9,8 @@ $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
 
+$transition: all 1s;
+
 /* Global */
 
 *, *::before, *::after {
@@ -120,4 +122,45 @@ body {
   a {
   margin-right: 5px;
   }
+}
+
+
+/* Tag Cloud */
+
+.tags {
+  li { 
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    margin-right: 5px;
+  }
+  a:visited {
+    color: $color-dark;
+  }
+  a:hover {
+    color: green;
+    text-decoration: underline;
+    transition: $transition;
+  }
+}
+
+.tag-size-1 {
+  font-size: 100%;
+}
+
+.tag-size-2 {
+  font-size: 125%;
+}
+
+.tag-size-3 {
+  font-size: 150%;
+}
+
+.tag-size-4 {
+  font-size: 175%;
+}
+
+.tag-size-5 {
+  font-size: 200%;
 }
