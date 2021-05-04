@@ -96,10 +96,24 @@ body {
 /* Authors */
 
 .authors {
-  li {
+  li { 
     margin-bottom: 12px;
   }
+  a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: $color-dark
+  }
+  a:visited {
+    font-weight: 900;
+  }
+  a:hover {
+    color: green;
+    text-decoration: underline;
+    transition: $transition;
+  }
 }
+
 
 /* Post */
 
@@ -134,9 +148,10 @@ body {
   a {
     text-decoration: none;
     margin-right: 5px;
+    color: $color-dark;
   }
   a:visited {
-    color: $color-dark;
+    font-weight: 900;
   }
   a:hover {
     color: green;
